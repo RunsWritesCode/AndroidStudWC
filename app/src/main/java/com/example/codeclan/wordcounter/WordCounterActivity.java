@@ -22,14 +22,16 @@ public class WordCounterActivity extends AppCompatActivity {
 
         inputText = findViewById(R.id.input_text);
         count = findViewById(R.id.button);
-        answer = findViewById(R.id.textView);
+        answer = findViewById(R.id.answer);
 
     }
 
     public void onCountButtonClicked(View button) {
         Log.d(getClass().toString(), "onCountButtonClicked was called");
         WordCount wordcount = new WordCount();
-        wordcount.countWords();
+        String textInput = inputText.getText().toString();
+       Integer count = wordcount.countWords(textInput);
+       answer.setText(count.toString());
 
     }
 
