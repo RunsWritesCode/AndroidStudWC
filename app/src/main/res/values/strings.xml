@@ -2,4 +2,5 @@
     <string name="app_name">Word Counter</string>
     <string name="input">Input some text</string>
     <string name="count">Count</string>
+    <string name="Count">The word count is...</string>
 </resources>
